@@ -27,6 +27,10 @@ Purpose: Used by developers to work on new features or bug fixes. Each feature b
 
 Usage: Branch off from Dev, work on the feature, and once complete, merge back into Dev for integration.
 ````
+
+![image](https://github.com/howdycloudyarsh/Git-Branching/assets/133496386/cd9f6053-6c15-42f0-a8b5-cd811798155a)
+
+
 ````
 Release Branches
 Purpose: Prepares for a new product release. This branch allows for minor bug fixes, documentation generation, and other release-oriented tasks without impacting ongoing development in the Dev branch.
