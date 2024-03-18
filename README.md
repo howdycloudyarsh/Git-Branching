@@ -15,32 +15,38 @@ Purpose: Acts as the main branch where the source code's current working version
 
 Usage: Rarely directly committed to; instead, changes are merged from Dev, Release, and Hotfix branches.
 ````
+````
 Dev Branch
 Purpose: Serves as the primary development branch where all feature branches merge back into. This is where ongoing work gets integrated, tested, and reviewed before being considered for release.
 
 Usage: Developers merge feature branches into Dev for integration testing. Once stable, changes in Dev move to a Release branch for further stabilization.
-
+````
+````
 Feature Branches
 Purpose: Used by developers to work on new features or bug fixes. Each feature branch corresponds to a single feature or fix, allowing for focused development without affecting the main or development branches.
 
 Usage: Branch off from Dev, work on the feature, and once complete, merge back into Dev for integration.
-
+````
+````
 Release Branches
 Purpose: Prepares for a new product release. This branch allows for minor bug fixes, documentation generation, and other release-oriented tasks without impacting ongoing development in the Dev branch.
 
 Usage: Branch off from Dev when the features for the next release are complete and stable. Once the release is ready, it merges into Master and Dev, and a tag is created to mark the release version.
-
+````
+````
 Hotfix Branches
 Purpose: Provides a quick way to fix critical bugs in the production version of the software.
 
 Usage: Branch off from Master, fix the issue, and then merge back into both Master and Dev. Like Release branches, a tag is created after merging to Master to indicate the new version.
-
+````
+````
 GitHub Production Branches [Preprod - Prod]
 Preprod (Preproduction) Branch: Serves as the final staging area for code before it goes into production. This is where final testing occurs, mimicking the production environment as closely as possible.
 
 Prod (Production) Branch: Reflects the codebase currently in production. It should only ever receive merges from Preprod or Release branches to ensure stability.
+````
+#### Workflow Summary
 
-Workflow Summary
 Development: Work is done in Feature branches, which merge back into Dev.
 
 Release Preparation: When ready, changes in Dev move to a Release branch for final adjustments and then to Master.
@@ -48,10 +54,6 @@ Release Preparation: When ready, changes in Dev move to a Release branch for fin
 Hotfixes: Critical fixes are made in Hotfix branches and merged into both Master and Dev.
 
 Production Deployment: Master is merged into Preprod for final testing. After approval, Preprod merges into Prod to update the production environment.
-
- 
-
- 
 
 Merging code between two GitHub accounts, especially from a development environment in one account (Dev) to a production environment in another account (Prod), involves a process that ensures code changes are properly reviewed, tested, and then deployed. This process can be achieved through the use of pull requests, but since GitHub doesn't directly support cross-account pull requests in the same way it does within the same repository or between forks within the same account, you would typically follow a process involving forking, pushing, and then creating pull requests or directly pushing to a branch, depending on your access levels and workflow preferences. Here’s a general approach to achieve this:
 
