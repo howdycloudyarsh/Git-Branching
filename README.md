@@ -21,6 +21,10 @@ Purpose: Serves as the primary development branch where all feature branches mer
 
 Usage: Developers merge feature branches into Dev for integration testing. Once stable, changes in Dev move to a Release branch for further stabilization.
 ````
+
+![image](https://github.com/howdycloudyarsh/Git-Branching/assets/133496386/8199e687-bd2f-4c53-93e7-d9722bae3064)
+
+
 ````
 Feature Branches
 Purpose: Used by developers to work on new features or bug fixes. Each feature branch corresponds to a single feature or fix, allowing for focused development without affecting the main or development branches.
@@ -37,12 +41,20 @@ Purpose: Prepares for a new product release. This branch allows for minor bug fi
 
 Usage: Branch off from Dev when the features for the next release are complete and stable. Once the release is ready, it merges into Master and Dev, and a tag is created to mark the release version.
 ````
+
+![image](https://github.com/howdycloudyarsh/Git-Branching/assets/133496386/fdbbc88c-20dd-4f9f-93c5-ea24bfa85503)
+
+
 ````
 Hotfix Branches
 Purpose: Provides a quick way to fix critical bugs in the production version of the software.
 
 Usage: Branch off from Master, fix the issue, and then merge back into both Master and Dev. Like Release branches, a tag is created after merging to Master to indicate the new version.
 ````
+
+![image](https://github.com/howdycloudyarsh/Git-Branching/assets/133496386/477a019e-7c6a-4c40-9ee7-bcf32ad209ba)
+
+
 ````
 GitHub Production Branches [Preprod - Prod]
 Preprod (Preproduction) Branch: Serves as the final staging area for code before it goes into production. This is where final testing occurs, mimicking the production environment as closely as possible.
